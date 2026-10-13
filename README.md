@@ -5,6 +5,7 @@
 **每个会话页面单独设定推理档位（关闭 / 低 / 中 / 高 / 最高 / 超高），子代理继承所属会话档位。**
 
 [![license](https://img.shields.io/badge/license-MIT-65a30d?style=flat)](LICENSE)
+[![dsh](https://img.shields.io/badge/DSH-0.2.x-0ea5e9?style=flat)](#-兼容性)
 [![platform](https://img.shields.io/badge/platform-DeepSeek%20Harness-0ea5e9?style=flat)](https://github.com/deepseek-ai/deepseek-harness)
 ![language](https://img.shields.io/badge/language-JS%20plain-F0DB4F?style=flat&logo=javascript&logoColor=000)
 
@@ -29,6 +30,18 @@ dsh plugin --profile web add github:373831615/dsh-think-level
 ```
 
 本地目录安装：`dsh plugin --profile web add <本目录绝对路径>`。
+
+## 🧩 兼容性
+
+| 项 | 支持 |
+|---|---|
+| **DSH 内核** | **0.2.x** —— 实测 `0.2.1-alpha.1`（开发期同时覆盖 `0.2.0-rc.2`） |
+| 界面 | DSH Web（client 半 `platform: web`） |
+| Node.js | ≥ 20.18.1（安装期） |
+
+- 依赖声明：`@deepseek-ai/dsh-settings`（可选 peer，内核自带）`^0.2.0-rc.1 || ^0.2.1-0`、`@deepseek-ai/schemastery@^3.18.1`
+- 内核 API 基线（均为 **0.2.x 世代**）：`agent/request` 瀑布、volatile Config、settings 表单写通道、`conversation.input.left` 插槽、`remote.session` 命名空间
+- **0.1.x 未测不承诺**；0.3.x 未出、届时回归再认证
 
 ## 🧭 使用
 

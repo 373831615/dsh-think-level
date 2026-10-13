@@ -14,6 +14,18 @@
   "bugs": {
     "url": "https://github.com/373831615/dsh-think-level/issues"
   },
+  "engines": {
+    "node": ">=20.18.1"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-settings": "^0.2.0-rc.1 || ^0.2.1-0",
+    "@deepseek-ai/schemastery": "^3.18.1"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/dsh-settings": {
+      "optional": true
+    }
+  },
   "exports": {
     ".": "./main.js",
     "./client": "./client.js",

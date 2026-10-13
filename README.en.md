@@ -5,6 +5,7 @@
 **Set the reasoning level per session page (Off / Low / Medium / High / Highest / Ultra). Subagents inherit their parent session's level.**
 
 [![license](https://img.shields.io/badge/license-MIT-65a30d?style=flat)](LICENSE)
+[![dsh](https://img.shields.io/badge/DSH-0.2.x-0ea5e9?style=flat)](#-compatibility)
 [![platform](https://img.shields.io/badge/platform-DeepSeek%20Harness-0ea5e9?style=flat)](https://github.com/deepseek-ai/deepseek-harness)
 
 [中文](README.md) · **English**
@@ -26,6 +27,18 @@
 ```bash
 dsh plugin --profile web add github:373831615/dsh-think-level
 ```
+
+## 🧩 Compatibility
+
+| | Supported |
+|---|---|
+| **DSH kernel** | **0.2.x** — tested on `0.2.1-alpha.1` (also exercised on `0.2.0-rc.2`) |
+| UI | DSH Web (client half `platform: web`) |
+| Node.js | ≥ 20.18.1 (install time) |
+
+- Peers: `@deepseek-ai/dsh-settings` (optional, shipped with the kernel) `^0.2.0-rc.1 || ^0.2.1-0`, `@deepseek-ai/schemastery@^3.18.1`
+- Kernel API baseline (all **0.2.x-era**): `agent/request` waterfall, volatile Config, the settings form write path, the `conversation.input.left` slot, the `remote.session` namespace
+- **0.1.x is untested and unsupported**; 0.3.x will be certified when it ships
 
 ## 🧭 Usage
 
