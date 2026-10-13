@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Session Thinking Level",
+    "description": "Per-session thinking level with six positions — Off / Low / Medium / High / Highest / Ultra — set in every session's composer; subagents inherit their parent session's level. A global default covers sessions without their own setting."
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "@local/think-level",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "会话思考档位：每个会话页面单独设定推理档位（关闭/低/中/高/最高/超高），子代理继承所属会话档位；另有全局默认档。",
+  "keywords": ["dsh", "dsh-plugin", "deepseek-harness", "cordis", "reasoning", "thinking-level", "web-ui"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/373831615/dsh-think-level.git"
+  },
+  "homepage": "https://github.com/373831615/dsh-think-level",
+  "bugs": {
+    "url": "https://github.com/373831615/dsh-think-level/issues"
+  },
+  "exports": {
+    ".": "./main.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": ["main.js", "client.js", "cordis.patch.yml", "locale/*.json", "icon.svg", "README.md"],
+  "dependencies": {
+    "@deepseek-ai/schemastery": "3.18.5-alpha.1"
+  },
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": ["@deepseek-ai/dsh-client-ui-settings", "@deepseek-ai/dsh-client-ui-settings-general", "@deepseek-ai/dsh-client-locale", "@deepseek-ai/dsh-client-ui-conversation"]
+    }
+  }
+}

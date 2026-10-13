@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 200" width="720" height="200">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3b6ef6"/>
+      <stop offset="1" stop-color="#7b4df0"/>
+    </linearGradient>
+    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="720" height="200" rx="24" fill="url(#bg)"/>
+  <rect x="0" y="0" width="720" height="100" rx="24" fill="url(#fade)"/>
+  <g transform="translate(48,52)">
+    <rect x="0" y="0" width="96" height="96" rx="24" fill="#ffffff" fill-opacity="0.14"/>
+    <rect x="18" y="20" width="40" height="30" rx="7" fill="#ffffff" fill-opacity="0.92"/>
+    <rect x="38" y="40" width="40" height="30" rx="7" fill="#ffffff" fill-opacity="0.55"/>
+    <circle cx="58" cy="55" r="9" fill="none" stroke="#ffffff" stroke-width="3.5"/>
+    <path d="M58 49.5v5.8l4 2.7" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <text x="172" y="86" font-family="Segoe UI, PingFang SC, sans-serif" font-size="44" font-weight="700" fill="#ffffff">think-level</text>
+  <text x="174" y="118" font-family="Segoe UI, PingFang SC, sans-serif" font-size="19" fill="#ffffff" fill-opacity="0.92">会话思考档位 · 每会话六档推理开关</text>
+  <g font-family="Segoe UI, PingFang SC, sans-serif" font-size="15" fill="#ffffff">
+    <g transform="translate(172,140)">
+      <rect x="0" y="0" width="58" height="30" rx="15" fill="#ffffff" fill-opacity="0.16"/><text x="29" y="20" text-anchor="middle">关闭</text>
+      <rect x="66" y="0" width="58" height="30" rx="15" fill="#ffffff" fill-opacity="0.16"/><text x="95" y="20" text-anchor="middle">低</text>
+      <rect x="132" y="0" width="58" height="30" rx="15" fill="#ffffff" fill-opacity="0.16"/><text x="161" y="20" text-anchor="middle">中</text>
+      <rect x="198" y="0" width="58" height="30" rx="15" fill="#ffffff" fill-opacity="0.3"/><text x="227" y="20" text-anchor="middle">高</text>
+      <rect x="264" y="0" width="58" height="30" rx="15" fill="#ffffff" fill-opacity="0.16"/><text x="293" y="20" text-anchor="middle">最高</text>
+      <rect x="330" y="0" width="58" height="30" rx="15" fill="#ffffff" fill-opacity="0.16"/><text x="359" y="20" text-anchor="middle">超高</text>
+    </g>
+  </g>
+</svg>

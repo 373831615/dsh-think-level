@@ -1,0 +1,11 @@
+- insert:
+    - id: think-level
+      name: '@local/think-level'
+
+# 模块监视根（opt-in）：本包是工作区链接安装，源码改动只有进入 hmr 的
+# root 才会走模块替换 / manifest 失效。override 替换整份 config，故重述
+# 全部字段——基础行（dsh-base）只设 root。
+- id: hmr
+  config:
+    root:
+      - D:/deepseek-harness/deepseek-harness-master/plugins/think-level
