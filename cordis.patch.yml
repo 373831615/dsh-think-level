@@ -2,10 +2,10 @@
     - id: think-level
       name: '@local/think-level'
 
-# 模块监视根（opt-in）：本包是工作区链接安装，源码改动只有进入 hmr 的
-# root 才会走模块替换 / manifest 失效。override 替换整份 config，故重述
-# 全部字段——基础行（dsh-base）只设 root。
-- id: hmr
-  config:
-    root:
-      - D:/deepseek-harness/deepseek-harness-master/plugins/think-level
+# 开发期可选：把本包目录加进 hmr 模块监视根（Client 半本就存盘即生效；
+# Host 半改码受代际缓存约束，换代需全新身份或重启内核，见 README 开发备注）。
+# 公开版不含本机绝对路径；本地开发需要时取消注释并把 <本包目录绝对路径> 换成实际路径。
+# - id: hmr
+#   config:
+#     root:
+#       - <本包目录绝对路径>
